@@ -1,0 +1,16 @@
+@import 'generic';
+
+.content {
+  font-family: segoe-ui-light, serif;
+  white-space: pre-wrap;
+
+  &__title {
+    background-color: $mc-yellow;
+    font-family: segoe-ui-light, serif;
+  }
+
+  & p {
+    font-family: segoe-ui-light, serif;
+    font-size: $default-font-size;
+  }
+}

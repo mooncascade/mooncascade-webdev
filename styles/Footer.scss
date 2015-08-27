@@ -1,0 +1,32 @@
+@import 'generic';
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: $mc-gray;
+
+  &__name {
+    flex: 1 0 150px;
+    white-space: nowrap;
+  }
+
+  &__contacts {
+    flex: 3 0 300px;
+    text-align: right;
+
+    & > span {
+      white-space: nowrap;
+      margin: 5px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    display: block;
+
+    &__name, &__contacts > span {
+      display: block;
+      text-align: center;
+    }
+  }
+}

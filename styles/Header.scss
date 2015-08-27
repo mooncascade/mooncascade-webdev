@@ -1,0 +1,28 @@
+@import 'generic';
+
+.header {
+  background-color: white !important;
+  margin-bottom: 10px;
+
+  button {
+    margin: 15px 5px !important;
+
+    & > div {
+      font-family: segoe-ui-light, serif !important;
+      font-size: $menu-font-size !important;
+      color: $mc-black !important;
+      text-transform: none !important;
+    }
+  }
+
+  @media (max-width: 479px) {
+    padding: 0 !important;
+
+    img {
+      margin: 10px 5px;
+      height: 35px !important;
+    }
+
+
+  }
+}

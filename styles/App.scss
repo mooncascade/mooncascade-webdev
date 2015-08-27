@@ -1,0 +1,13 @@
+@import 'generic';
+
+body {
+  color: $mc-black;
+  font-size: $default-font-size;
+  font-family: segoe-ui-light, 'Roboto', serif;
+}
+
+.mc-app {
+  min-width: 300px;
+  max-width: 600px;
+  margin: 10px auto;
+}
