@@ -1,6 +1,6 @@
 # Mooncascade web developer demo project
 
-This is how we like to code web applications at Mooncascade. The project is based on ES6, Redux, React and MaterialUI.
+This is how we like to code web applications at Mooncascade. The project is based on [ES6](https://github.com/lukehoban/es6features), [Redux](https://github.com/rackt/redux), [React](https://github.com/facebook/react) and [MaterialUI](https://github.com/callemall/material-ui).
 
 If this seems interesting to you, try running the code and resolving some of the open issues. Let us know if you like it, drop us a line at [jobs@mooncascade.com](mailto:jobs@mooncascade.com)
 
