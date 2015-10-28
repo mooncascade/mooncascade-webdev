@@ -7,8 +7,6 @@ import Footer from '../components/Footer';
 import mui from 'material-ui';
 require('../styles/App.scss');
 
-let ThemeManager = new mui.Styles.ThemeManager();
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -17,12 +15,6 @@ class App extends Component {
     componentDidMount() {
         const { dispatch, page } = this.props;
         dispatch(fetchPage(page));
-    }
-
-    getChildContext() {
-        return {
-            muiTheme: ThemeManager.getCurrentTheme()
-        }
     }
 
     render() {
@@ -45,10 +37,6 @@ class App extends Component {
         this.props.dispatch(fetchPage(page));
     }
 }
-
-App.childContextTypes = {
-    muiTheme: PropTypes.object
-};
 
 App.propTypes = {
     page: PropTypes.string.isRequired,
