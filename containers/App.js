@@ -22,9 +22,10 @@ class App extends Component {
         return (
             <div className="mc-app">
                 <Header onChangePage={(page) => { dispatch(fetchPage(page)) }} />
-                {!isFetching &&
-                    <Content {...this.props} />
-                }
+
+                <div>
+                {this.props.children}
+                </div>
                 {isFetching &&
                     <mui.CircularProgress mode="indeterminate" size={2} />
                 }
@@ -48,7 +49,8 @@ App.propTypes = {
 };
 
 function mapStateToProps(state) {
-    const { title, description, more, page, isFetching } = state;
+    console.log(state);
+    const { title, description, more, page, isFetching } = state.dataReducers;
     return {
         title,
         description,
